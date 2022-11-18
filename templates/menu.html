@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les pizzas</title>
+</head>
+<body>
+    <h1>{{ pizzas|length }} Pizzas</h1>
+    <ul>
+        {% for pizza in pizzas %}
+            <li>{{ pizza.nom }}  {{ pizza.prix  }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
